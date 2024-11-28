@@ -1,0 +1,50 @@
+<div class="container mt-3">
+  <div class="col-md-6">
+    <h2>Tambahkan Kontak</h2>
+
+    <% if (typeof errors != 'undefined') { %>
+    <div class="alert alert-danger" role="alert">
+      <% errors.forEach(element => { %>
+      <div>
+        <p>
+          <%= element.msg %> <% if (element.value != "") { %> (<%= element.value
+          %>) <% } %>
+        </p>
+      </div>
+      <% }) %>
+    </div>
+    <% } %>
+    <form method="post" action="/contact">
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nama"
+          name="nama"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label" required>Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          name="email"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">No Hp</label>
+        <input type="tel" class="form-control" id="phone" name="phone" />
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="address" name="address" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

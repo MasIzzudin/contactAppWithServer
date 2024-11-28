@@ -1,0 +1,38 @@
+{
+  "name": "nodejswebserver",
+  "version": "1.0.0",
+  "description": "create web server",
+  "main": "index.js",
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": "",
+  "contributors": [],
+  "scripts": {
+    "dev": "",
+    "test": ""
+  },
+  "dependencies": {
+    "@lukeed/uuid": "^2.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.0",
+    "moment": "^2.30.1",
+    "morgan": "^1.10.0"
+  }
+}
